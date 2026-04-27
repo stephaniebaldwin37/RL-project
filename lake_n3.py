@@ -18,7 +18,7 @@ n = 3
 
 def epsilon_greedy(Q, state, epsilon):
     if np.random.rand() < epsilon:
-        return np.random.randint(n_actions)
+        return np.random.randint(num_actions)
     return np.argmax(Q[state])
 
 def time_to_convergence(moving_avg, sustain=2000, threshold_ratio=0.95, tail=5000):
@@ -92,7 +92,7 @@ env.close()
 end_time = time.perf_counter()
 total_time = end_time - start_time
 
-window = 100000
+window = 10000
 moving_avg = []
 
 for i in range(len(episode_rewards)):
@@ -110,6 +110,6 @@ print("Time to convergence:", t_conv)
 
 plt.plot(moving_avg)
 plt.xlabel("Episode")
-plt.ylabel("Average Reward (last 100000 episodes)")
-plt.title("3-step SARSA on FrozenLake")
+plt.ylabel("Average Reward (last 10000 episodes)")
+plt.title("100-step SARSA on FrozenLake")
 plt.show()
