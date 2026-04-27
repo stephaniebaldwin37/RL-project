@@ -17,3 +17,4 @@ Success rate - an episode is considered successful if the reward is positive at 
 Time to convergence - defined as reaching 95% of the average reward for 2000 episodes 
 
 Python 3.10 or higher is needed to run the code due to the adjusted reward function.
+Aligned with algorithms outlined in Sutton & Barto: Reinforcement Learning.
