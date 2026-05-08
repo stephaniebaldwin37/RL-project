@@ -11,10 +11,10 @@ SARSA(λ): λ= 0.9 , λ= 0.7
 Different values of n and lambda can be tested by adjusting those values in lake_multiplen and lake_lambda.
 
 The methods are evaluated based on the following metrics:
-Computation time(seconds)
-Average reward - plotted on graph 
-Success rate - an episode is considered successful if the reward is positive at the end of the episode 
-Time to convergence - defined as reaching 95% of the average reward for 2000 episodes 
+Computation time(seconds),
+Average reward (plotted),
+Success rate (an episode is considered successful if the reward is positive at the end of the episode),
+Time to convergence (defined as reaching 95% of the average reward for 2000 episodes)
 
 Python 3.10 or higher is needed to run the code due to the adjusted reward function.
 Aligned with algorithms outlined in Sutton & Barto: Reinforcement Learning.
